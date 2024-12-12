@@ -1,12 +1,12 @@
 package com.roshan798.BMS.controller;
 
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class Customer {
+public class CustomerController {
 
-	@RequestMapping("/ping")
+	@GetMapping("/")
 	public String ping() {
 		return "Hello World";
 	}
